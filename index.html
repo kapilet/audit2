@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- :: Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- :: Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- :: Favicon -->
+    <!-- <link rel="icon" type="image/png" href="assets/images/favicon.ico"> -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- :: Title -->
+    <title>Interior</title>
+    
+    <!-- :: Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">    
+    <!-- :: FontAwesome
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css"> -->
+
+    <!-- :: lineicons -->
+    <link rel="stylesheet" href="assets/fonts/lineicons/css/simple-line-icons.min.css">
+    
+    <!-- :: FlatIcon
+    <link rel="stylesheet" href="assets/fonts/flaticon/css/flaticon.css"> -->
+    
+    <!-- :: OWL Carousel
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
+    
+    <!-- :: Lity -->
+    <link rel="stylesheet" href="assets/css/lity.min.css">
+    
+    <!-- :: Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- :: Style Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+    <body>
+        <!-- :: Loading -->
+        <div class="loading">
+            <div class="loading-box">
+                <div class="lds-ring">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div id="page"></div>
+        <!-- :: Navbar -->
+        <nav class="nav-bar">
+            <div class="container-fluid">
+                <div class="box-content d-flex align-items-center justify-content-between flex-column">
+                    <div class="logo">
+                        <a href="#" class="logo-nav">
+                            <!-- <img class="img-fluid" src="assets/images/logo/01_logo.png" alt="01 Logo"> -->
+                        </a>
+                        <a href="#open-nav-bar-menu" class="open-nav-bar collapsed" data-toggle="collapse">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="nav-bar-link" id="open-nav-bar-menu">
+                        <ul class="level-1" id="top-menu">
+                            <li><a data-scroll href="#home" class="">Disclaimer</a></li>
+                            <li><a data-scroll href="#about">Report Summary</a></li>
+                            <li><a data-scroll href="#projects">Version Info</a></li>
+                            <li>
+                                <a data-scroll href="#process">Overview</a>
+                                <ul>
+                                    <li><a href="#Overview">Background</a></li>
+                                    <li><a href="#Overview">Project Dates</a></li>
+                                    <li><a href="#Overview">Review Team</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a data-scroll href="#contact">Introduction</a>
+                                <ul>
+                                    <li><a href="#Manual_audit">Manual audit</a></li>
+                                    <li><a href="#Automated_analysis">Automated analysis</a></li>
+                                    <li>
+                                      <a href="#" class="has-arrow">Report</a>
+                                      <ul>
+                                        <li><a href="#Audit_details">Audit details</a></li>
+                                        <li><a href="#Audit_Goals">Audit Goals</a></li>
+                                        <li><a href="#Security">Security</a></li>
+                                        <li><a href="#Sound_architecture">Sound architecture</a></li>
+                                        <li><a href="#Code_correctness">Code correctness and quality</a></li>
+                                        <li><a href="#Test_Methods">Test Methods</a></li>
+                                        <li><a href="#Issue_check_list">Issue check list</a></li>
+                                      </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a data-scroll href="#process">Findings</a>
+                                <ul>
+                                    <li><a href="#Summary">Summary</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a data-scroll href="#contact">Overall Detailed Results</a>
+                                <ul>
+                                    <li><a href="#Overall_Detailed_Results">Tasks</a></li>
+                                    <li><a href="#Overall_Detailed_Results">Issues</a></li>
+                                    <li><a href="#Overall_Detailed_Results">Checks</a></li>
+                                    <li><a href="#Overall_Detailed_Results">Notes</a></li>
+                                    <li><a href="#Overall_Detailed_Results">Estimates</a></li>
+                                    <li><a href="#Overall_Detailed_Results">Project Decisions</a></li>
+                                    <li>
+                                      <a href="#" class="has-arrow" aria-expanded="false">Tool Results</a>
+                                      <ul>
+                                        <li><a href="#MythX">MythX (2 "level low" issues detected)</a></li>
+                                        <li><a href="#Slither">Slither</a></li>
+                                      </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a data-scroll href="#Conclusion">Conclusion</a></li>
+                            <li><a data-scroll href="#About_blockchainone">About blockchainone</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>       
+        
+        <!-- :: Header -->
+        <header class="header py-50 pt-0" id="home">
+            <div class="header-owl">
+                <div class="sec-hero display-table" style="background-image: url(assets/images/header/01_header.jpg)">
+                    <div class="table-cell">
+                        <!-- <div class="overlay"></div> -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 mx-auto text-center">
+                                    <div class="banner">
+                                        <h1 class="handline">Smart Contract Audit Report</h1>
+                                        <h2 class="about-site">Smart Contract Review</h2>
+                                        <p>Security Report</p>
+                                        <p>Platform Factory Pvt Ltd</p>
+                                        <p>11/18/2022</p>
+                                        <!-- <div class="buttons">
+                                            <a href="#" class="btn-1 move-section">More Details</a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- :: About us -->
+        <section class="about py-50" id="Disclaimer">
+            <div class="container">       
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-box">
+                            <!-- <div class="sec-title text-center">
+                                <h4>Our Process</h4>
+                            </div> -->
+                            <div class="row">
+                                <div class="col-lg-6 to_fade_from_left">
+                                    <div class="about-img1">
+                                        <img class="img-fluid" src="assets/images/about/Disclaimer.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 to_fade_from_right">
+                                    <div class="sec-title">
+                                        <h3>Disclaimer</h3>
+                                        <p>blockchainone retains the right to display audit reports and other content elements based on the work in their portfolio and as content features in other projects with protecting all security purpose of customer. The report containing confidential information can be used internally by the Customer, or it can be disclosed publicly after all vulnerabilities fixed- upon a decision of the Customer.</p>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        <section class="about py-50" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <div class="sec-title text-center">
+                            <h3>Report Summary</h3>
+                        </div>
+                        <table class="table table-striped table-borderless">
+                            <tr>
+                                <th>Title</th>
+                                <td>bco Smart Contract Audit Report</td>
+                            </tr>
+                            <tr>
+                                <th>Project Owner</th>
+                                <td>blockchainone</td>
+                            </tr>
+                            <tr>
+                                <th>Type</th>
+                                <td>Public</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Reviewed by :</strong> Mark
+                                </td>
+                                <td>
+                                    <strong>Revision date :</strong> 11/04/2023
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Approved by :</strong> Platform factory Private Limited                        
+                                </td>
+                                <td>
+                                    <strong>Approval date :</strong> 12/04/2023                        
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>No Pages</th>
+                                <td>15</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about py-50" id="about">
+            <div class="container">                
+                <div class="sec-title text-center">
+                    <h3>Version Info</h3>
+                </div>
+                <table class="table table-striped table-borderless">
+                    <tr>
+                        <th>Version</th>
+                        <th>Date</th>
+                        <th>Author(s)</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>1.0</td>
+                        <td>April 3, 2023</td>
+                        <td>Mark</td>
+                        <td>Final Release</td>
+                    </tr>
+                    <tr>
+                        <td>1.0-rc1</td>
+                        <td>April 12, 2023</td>
+                        <td>James</td>
+                        <td>Release Candidate #1</td>
+                    </tr>
+                </table>                    
+            </div>
+        </section>
+        <section class="about py-50 bg-light" id="Overview">
+            <div class="container">                
+                <div class="sec-title text-center">
+                    <h3>Overview</h3>
+                </div>
+                <div class="mb-3">
+                    <h4 class="mb-2">Background</h4>
+                    <p>Platform Factory Pvt Ltd requested that blockchainone can perform an extensive audit of their Smart Contracts.</p>
+                </div>
+                <div class="mb-3">
+                    <h4 class="mb-2">Project Dates</h4>
+                    <p>The following is the project schedule for this review and report:</p>
+                    <ul class="disk">
+                        <li>April 12: Delivery of Smart Contract Audit Report (Completed)</li>
+                        <li>April 12: Delivery of Smart Contract Audit Report (Completed)</li>
+                    </ul>
+                </div>
+                <div class="mb-3">
+                    <h4 class="mb-2">Review Team</h4>
+                    <p>The following blockchainone team member participated in this review:</p>
+                    <ul class="disk">
+                        <li>Mark, Security Researcher and Engineer</li>
+                        <li>James, Security Researcher and Engineer </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="about py-50" id="about">
+            <div class="container">                
+                <div class="sec-title text-center">
+                    <h3>Introduction</h3>
+                </div>
+                <p>Given the opportunity to review blockchainone related smart contract source code, we in the report outline our systematic approach to evaluate potential security issues in the smart contract implementation, expose possible semantic inconsistencies between smart contract code and design document, and provide additional suggestions or recommendations for improvement. Our results show that the given version of smart contracts is ready to launch after resolving the mentioned issues, there are no critical or high or medium severity issues found related to business logic, security or performance.</p>
+                <p>Auditing approach and Methodologies applied</p>
+                <p>In this audit, we consider the following crucial features of the code.</p>
+                <ul class="disk">
+                    <li>Whether the implementation of protocol standards.</li>
+                    <li>Whether the code is secure.</li>
+                    <li>Whether the code meets the best coding practices.</li>
+                    <li>Whether the code meets the SWC Registry issue.</li>
+                </ul>
+                <div class="mb-3">
+                    <h4 class="mb-2" id="Manual_audit">Manual audit</h4>
+                    <ul class="disk">
+                        <li>Inspecting the code line by line and revert the initial algorithms of the protocol and then compare them with the specification</li>
+                        <li>Manually analyzing the code for security vulnerabilities.</li>
+                        <li>Assessing the overall project structure, complexity & quality.</li>
+                        <li>Checking SWC Registry issues in the code.</li>
+                        <li>Unit testing by writing custom unit testing for each function.</li>
+                        <li>Checking whether all the libraries used in the code of the latest version.</li>
+                        <li>Analysis of security on-chain data.</li>
+                        <li>Analysis of the failure preparations to check how the smart contract performs in case of bugs and vulnerability.</li>
+                    </ul>
+                </div>
+                <div class="mb-3">
+                    <h4 class="mb-2" id="Automated_analysis">Automated analysis</h4>
+                    <ul class="disk">
+                        <li>Scanning the project's code base with Mythril, Slither, Echidna , Manticore other's.</li>
+                        <li>Manually verifying (reject or confirm) all the issues found by tools.</li>
+                        <li>Performing Unit testing.</li>
+                        <li>Manual Security Testing (SWC-Registry, Overflow)</li>
+                        <li>Running the tests and checking their coverage.</li>
+                    </ul>
+                </div>
+                <div class="mb-3">
+                    <h4 class="mb-2">Report</h4>
+                    <p class="font-weight-bold">All the gathered information is described in this report.</p>
+                    <h5 class="mb-2" id="Audit_details">Audit details</h5>
+                    <ul class="disk">
+                        <li>Project Name: Amplify Protocol</li>
+                        <li>Token symbol: AMPT</li>
+                        <li>Token Supply: 100 million AMPT</li>
+                        <li>Language: Solidity</li>
+                        <li>Platform and tools: Remix, VScode, security and other tools mentioned in the automated analysis section.</li>
+                    </ul>
+                    <h5 class="mb-2" id="Audit_Goals">Audit Goals</h5>
+                    <p>The focus of this audit was to verify whether the smart contract is secure, resilient, and working properly according to the specs. The audit activity can be grouped in three categories.</p>
+                    <h5 class="mb-2" id="Security">Security</h5>
+                    <p>Identifying the security-related issue within each contract and system of contracts. Every issue in this report was assigned a severity level such as critical, high and low etc.</p>
+                    <p class="font-weight-bold">Vulnerability Severity Classification</p>
+                    <table class="table table-borderless mb-5 fs-6">
+                        <tbody><tr>
+                          <td class="table-warning text-warning fw-bold">High</td>
+                          <td class="table-danger text-danger fw-bold">Critical</td>
+                          <td class="table-warning text-warning fw-bold">High</td>
+                          <td class="table-primary text-primary fw-bold">Medium</td>
+                        </tr>
+                        <tr>
+                          <td class="table-primary text-primary fw-bold">Medium</td>
+                          <td class="table-warning text-warning fw-bold">High</td>
+                          <td class="table-primary text-primary fw-bold">Medium</td>
+                          <td class="table-success text-success fw-bold">Low</td>
+                        </tr>
+                        <tr>
+                          <td class="table-success text-success fw-bold">Low</td>
+                          <td class="table-primary text-primary fw-bold">Medium</td>
+                          <td class="table-success text-success fw-bold">Low</td>
+                          <td class="table-success text-success fw-bold">Low</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td class="table-warning text-warning fw-bold">High</td>
+                          <td class="table-primary text-primary fw-bold">Medium</td>
+                          <td class="table-success text-success fw-bold">Low</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="table mb-5">
+                        <thead>
+                          <tr class="table-dark">
+                            <th>Low</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="table-danger text-danger fw-bold align-middle">Critical</td>
+                            <td>Critical severity vulnerabilities will have a significant effect on the security of the DeFi project, and it is strongly recommended to fix the critical vulnerabilities.</td>
+                          </tr>
+                          <tr>
+                            <td class="table-warning text-warning fw-bold align-middle">High</td>
+                            <td>High severity vulnerabilities will affect the normal operation of the DeFi project. It is strongly recommended to fix high-risk vulnerabilities.</td>
+                          </tr>
+                          <tr>
+                            <td class="table-primary text-primary fw-bold align-middle">Medium</td>
+                            <td>Medium severity vulnerability will affect the operation of the DeFi project. It is recommended to fix medium-risk vulnerabilities.</td>
+                          </tr>
+                          <tr>
+                            <td class="table-success text-success fw-bold align-middle">Low</td>
+                            <td>Low severity vulnerabilities may affect the operation of the DeFi project in certain scenarios. It is suggested that the project party should evaluate and consider whether these vulnerabilities need to be fixed.</td>
+                          </tr>
+                          <tr>
+                            <td class="table-secondary text-secondary fw-bold align-middle">Weakness</td>
+                            <td>There are safety risks theoretically, but it is extremely difficult to reproduce in engineering.</td>
+                          </tr>
+                        </tbody>            
+                    </table>
+                </div>
+                <div class="mb-3">
+                    <h4 class="mb-2" id="Sound_architecture">Sound architecture</h4>
+                    <p>Evaluating the architect of a system through the lens of established smart contract best practice and general software practice.</p>
+                </div>
+                <div class="mb-3">
+                    <h4 class="mb-2" id="Code_correctness">Code correctness and quality</h4>
+                    <p>A full review of contract source code. The primary area of focus includes.</p>
+                    <ul class="disk">
+                        <li>Correctness.</li>
+                        <li>Section of code with high complexity.</li>
+                        <li>Readability.</li>
+                        <li>Quantity and quality of test coverage.</li>
+                    </ul>
+                </div>
+                <div class="mb-3">
+                    <h4 class="mb-2" id="Test_Methods">Test Methods</h4>
+                    <p class="fw-bold">The Test Method Information:</p>
+                    <table class="table mb-5">
+                        <thead>
+                          <tr class="table-dark">
+                            <td>Test method</td>
+                            <td>Description</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="fw-bold">Black box testing</td>
+                            <td>Black box testing	Conduct security tests from an attacker's perspective externally.</td>
+                          </tr>
+                          <tr>
+                            <td class="fw-bold">Grey box testing</td>
+                            <td>Conduct security testing on code modules through the scripting tool, observing the internal running status, mining weaknesses.</td>
+                          </tr>
+                          <tr>
+                            <td class="fw-bold">White box testing</td>
+                            <td>Based on the open-source code, non-open- source code, to detect whether there are vulnerabilities in programs such as nodes, SDK, etc.</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mb-3">
+                    <h4 class="mb-2" id="Issue_check_list">Issue check list</h4>
+                    <p class="fw-bold">The Full List of Check Items:</p>
+                    <table class="table table-bordered mb-5">
+                        <thead>
+                          <tr class="table-dark">
+                            <th>Category</th>
+                            <th>Checklist Items</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="align-middle fw-bold">Basic Coding Bugs</td>
+                            <td>
+                              <table class="table table-borderless table-striped table-sm">
+                                <tbody>
+                                <tr><td>Basic Coding Bugs	Constructor Mismatch</td></tr>
+                                <tr><td>Ownership Takeover</td></tr>
+                                <tr><td>Redundant Fallback Function</td></tr>
+                                <tr><td>Overflows &amp; Underflows</td></tr>
+                                <tr><td>Re-entrancy</td></tr>
+                                <tr><td>Money-Giving Bug</td></tr>
+                                <tr><td>Blackhole</td></tr>
+                                <tr><td>Unauthorized Self-Destruct</td></tr>
+                                <tr><td>Revert DoS</td></tr>
+                                <tr><td>Unchecked External Call</td></tr>
+                                <tr><td>Gasless Send</td></tr>
+                                <tr><td>Send Instead Of Transfer</td></tr>
+                                <tr><td>Costly Loop</td></tr>
+                                <tr><td>(Unsafe) Use Of Untrusted Libraries</td></tr>
+                                <tr><td>(Unsafe) Use Of Predictable Variables</td></tr>
+                                <tr><td>Transaction Ordering Dependence</td></tr>
+                                <tr><td>Deprecated Uses</td></tr>                  
+                              </tbody></table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle fw-bold">Semantic Consistency Checks</td>
+                            <td>Semantic Consistency Checks</td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle fw-bold">Advanced DeFi Scrutiny</td>
+                            <td>
+                              <table class="table table-borderless table-striped table-sm">
+                                <tbody><tr><td>Business Logics Review</td></tr>
+                                <tr><td>Functionality Checks</td></tr>
+                                <tr><td>Authentication Management</td></tr>
+                                <tr><td>Access Control &amp; Authorization</td></tr>
+                                <tr><td>Oracle Security</td></tr>
+                                <tr><td>Digital Asset Escrow</td></tr>
+                                <tr><td>Kill-Switch Mechanism</td></tr>
+                                <tr><td>Operation Trails &amp; Event Generation</td></tr>
+                                <tr><td>ERC20 Idiosyncrasies Handling</td></tr>
+                                <tr><td>Frontend-Contract Integration</td></tr>
+                                <tr><td>Deployment Consistency</td></tr>
+                                <tr><td>Holistic Risk Management</td></tr>
+                              </tbody></table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td rowspan="6" class="align-middle fw-bold">Additional Recommendations</td>
+                            <td>
+                              <table class="table table-borderless table-striped table-sm">
+                                <tbody><tr><td>Avoiding Use of Variadic Byte Array</td></tr>
+                                <tr><td>Using Fixed Compiler Version</td></tr>
+                                <tr><td>Making Visibility Level Explicit</td></tr>
+                                <tr><td>Making Type Inference Explicit</td></tr>
+                                <tr><td>Adhering To Function Declaration Strictly</td></tr>
+                                <tr><td>Following Other Best Practices</td></tr>
+                              </tbody></table>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="about py-50" id="Summary">
+            <div class="container">                
+                <div class="sec-title text-center">
+                    <h3>Findings</h3>
+                </div>
+                <h4 class="mb-2">Summary</h4>
+                <p>Here is a summary of our findings after analyzing the blockchainone Smart Contract Review.</p>
+                <p>During the first phase of our audit, we studied the smart contract source code and ran code analyzer through specific tools. The purpose here is to statically identify known coding bugs, and then manually verify (reject or confirm) issues reported by tool. We further manually review business logics, examine system operations, and place token management aspects under scrutiny to uncover possible pitfalls and/or bugs.</p>
+                <p class="fw-bld">The details on the total number of issues with color coding:</p>
+                <table class="table table-borderless mb-5 w-auto">
+                    <thead>
+                      <tr>
+                        <th>Severity</th>
+                        <th class="text-center">No Of Findings</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-danger">Critical</td>
+                        <td class="text-center">0</td>
+                      </tr>
+                      <tr>
+                        <td class="text-warning">High</td>
+                        <td class="text-center">0</td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">Medium</td>
+                        <td class="text-center">0</td>
+                      </tr>
+                      <tr>
+                        <td class="text-success">Low</td>
+                        <td class="text-center">3</td>
+                      </tr>
+                      <tr>
+                        <td class="text-secondary">Informational</td>
+                        <td class="text-center">0</td>
+                      </tr>
+                      <tr class="table-primary">
+                        <td class="fw-bold">Total</td>
+                        <td class="fw-bold text-center">3</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <p>We have so far identified that there are potential issues with severity of 0 Critical, 0 High, 0 Medium, and 3 Low. Overall, these smart contracts are well-designed and engineered, though the implementation can be improved and bug free by common recommendations given under POCs.</p>
+            </div>
+        </section>
+        <section class="about py-50" id="Overall_Detailed_Results">
+            <div class="container">                
+                <div class="sec-title text-center">
+                    <h3>Overall Detailed Results</h3>
+                </div>
+                <div class="d-flex align-items-start row">
+                    <div class="nav flex-column nav-pills col-sm-4 col-md-2 sticky-top" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <button class="nav-link active" id="v-pills-Tasks-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Tasks" type="button" role="tab" aria-controls="v-pills-Tasks" aria-selected="true">Tasks</button>
+                      <button class="nav-link" id="v-pills-Issues-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Issues" type="button" role="tab" aria-controls="v-pills-Issues" aria-selected="false">Issues</button>
+                      <button class="nav-link" id="v-pills-Checks-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Checks" type="button" role="tab" aria-controls="v-pills-Checks" aria-selected="false">Checks</button>
+                      <button class="nav-link" id="v-pills-Notes-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Notes" type="button" role="tab" aria-controls="v-pills-Notes" aria-selected="false">Notes</button>
+                      <button class="nav-link" id="v-pills-Notes-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Estimates" type="button" role="tab" aria-controls="v-pills-Estimates" aria-selected="false">Estimates</button>
+                      <button class="nav-link" id="v-pills-Estimates-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Project-Decisions" type="button" role="tab" aria-controls="v-pills-Project-Decisions" aria-selected="false">Project Decisions</button>
+                      <button class="nav-link" id="v-pills-Project-Decisions-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Tool-Results" type="button" role="tab" aria-controls="v-pills-Tool-Results" aria-selected="false">Tool Results</button>
+                    </div>
+                    <div class="tab-content col-sm-8 col-md-10" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-Tasks" role="tabpanel" aria-labelledby="v-pills-Tasks-tab">
+                        <p>The task details the necessary step on the contract project completion either to get rid of the bug or provide security.</p>
+                          <table class="table table-borderless table-striped mb-5">
+                            <tr>
+                              <th>Task 1</th>
+                              <td>Change the code to make it secure</td>
+                            </tr>
+                            <tr>
+                              <th>Project Name </th>
+                              <td>oneSystems</td>
+                            </tr>
+                            <tr>
+                              <th>Assigned To </th>
+                              <td>oneAudit</td>
+                            </tr>
+                            <tr>
+                              <th>Line Number </th>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <th>Contract</th>
+                              <td>Token.sol </td>
+                            </tr>
+                            <tr>
+                              <th>Code</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th>Description</th>
+                              <td>Whether the contract name and its constructor are not identical to each other.</td>
+                            </tr>
+                            <tr>
+                              <th>Severity</th>
+                              <td class="text-warning">High</td>
+                            </tr>
+                            <tr>
+                              <th>Assigned Datetime</th>
+                              <td>23/01/2023 14:00</td>
+                            </tr>
+                            <tr>
+                              <th>Complete By</th>
+                              <td>23/01/2023 14:00</td>
+                            </tr>
+                            <tr>
+                              <th>Status</th>
+                              <td>Not Complete</td>
+                            </tr>
+                          </table>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-Issues" role="tabpanel" aria-labelledby="v-pills-Issues-tab">
+                        <p>A contract issue is any disagreement or problem that may arise during the formation or performance of the contract.</p>
+                          <table class="table table-borderless table-striped mb-5">
+                            <tr>
+                              <th>Issue 1</th>
+                              <td>Timely Reward Update Upon totalEmissions Change</td>
+                            </tr>
+                            <tr>
+                              <th>Project Name</th>
+                              <td>oneSystems</td>
+                            </tr>
+                            <tr>
+                              <th>Audit</th>
+                              <td>oneAudit</td>
+                            </tr>
+                            <tr>
+                              <th>Line Number</th>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <th>Contract</th>
+                              <td>Token.sol</td>
+                            </tr>
+                            <tr>
+                              <th>Code</th>
+                              <td>Whether the contract name and its constructor are not identical to each other.</td>
+                            </tr>
+                            <tr>
+                              <th>Description</th>
+                              <td class="text-danger">Critical</td>
+                            </tr>
+                            <tr>
+                              <th>Severity</th>
+                              <td class="text-primary">Medium</td>
+                            </tr>
+                            <tr>
+                              <th>Impact</th>
+                              <td>The bco tokenomics are supported by a core VoteController contract, which controls the voting for supported markets as well as the issuance of additional rewards via Comptroller. While reviewing the rewards-related logic, we notice the current implementation needs to be improved.</td>
+                            </tr>
+                            <tr>
+                              <th>Reason</th>
+                              <td>To elaborate, we show below the setTotalEmissions() function in VoteController. It implements a simplistic logic in allowing for setting the emission rate of the protocol token 0VIX. However, it does not immediately apply the new setting to the active markets. In other words, there is a need to invoke updateRewards() to adjust the dissemination speed via Comptroller.</td>
+                            </tr>
+                            <tr>
+                              <th>Code</th>
+                              <td><img src="image/cscr1.png" alt="" class="img-fluid"></td>
+                            </tr>
+                            <tr>
+                              <th>Recommendation</th>
+                              <td>Revise the above setTotalEmissions() function to timely apply the new emissions setting.</td>
+                            </tr>
+                            <tr>
+                              <th>Status</th>
+                              <td><p>The issue has been confirmed. And the team clarifies that "Since the current reward speeds are voted by the users, we don't want to update the rewards immediately after setting a new total emissions amount. The new amount of total emissions could have an impact on the users' vote behaviour and that's why we are updating the reward speeds only after voting in a periodic manner."</p><p>The issue will be fixed in the following commit: 82079c9. </p></td>
+                            </tr>
+                          </table>
+                          <p>The detailed report of all above and other errors/notes can be found at this <a href="#">link</a>.</p>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-Checks" role="tabpanel" aria-labelledby="v-pills-Checks-tab">
+                        <table class="table table-borderless table-striped mb-5">
+                            <tr>
+                              <th>Type 1</th>
+                              <td>Basic coding bugs</td>
+                            </tr>
+                            <tr>
+                              <th>Auditor</th>
+                              <td>oneAudit</td>
+                            </tr>
+                            <tr>
+                              <th>Line Number</th>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <th>Contract</th>
+                              <td>Token.sol</td>
+                            </tr>
+                            <tr>
+                              <th>Code</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th>Description</th>
+                              <td>Whether the contract name and its constructor are not identical to each other.</td>
+                            </tr>
+                            <tr>
+                              <th>Severity</th>
+                              <td class="text-success">Low</td>
+                            </tr>
+                            <tr>
+                              <th>Result</th>
+                              <td>Not found</td>
+                            </tr>
+                          </table>
+                          <p> The detailed report of all above and other errors/notes can be found at this <a href="#">link</a>.</p>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-Notes" role="tabpanel" aria-labelledby="v-pills-Notes-tab">
+                        <p>Note is a brief written announcement given by an audit or user for the code line in contract.</p>
+                          <table class="table table-borderless table-striped mb-5">
+                            <tr>
+                              <th>Notes 1</th>
+                              <td>Check the code for security purpose</td>
+                            </tr>
+                            <tr>
+                              <th>Project Name</th>
+                              <td>oneSystems</td>
+                            </tr>
+                            <tr>
+                              <th>Created By</th>
+                              <td>oneAudit</td>
+                            </tr>
+                            <tr>
+                              <th>Contract</th>
+                              <td>Token.sol</td>
+                            </tr>
+                            <tr>
+                              <th>Line Number</th>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <th>Code</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th>Severity</th>
+                              <td class="text-success">Low</td>
+                            </tr>
+                          </table>
+                          <p>The detailed report of all above and other errors/notes can be found at this <a href="">link</a>.</p>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-Estimates" role="tabpanel" aria-labelledby="v-pills-Estimates-tab">
+                        <p>The estimates is a process of forecasting the time and resources needed to deliver a project</p>
+                          <table class="table table-borderless table-striped mb-5">
+                            <thead>
+                              <tr>
+                                <th>SI</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Project Name</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Points</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Change code</td>
+                                <td>oneCategory</td>
+                                <td>oneSystems</td>
+                                <td>14-04-2023</td>
+                                <td>14-04-2023</td>
+                                <td>10</td>                
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <th colspan="6" class="text-end">Total Points</th>
+                                <th>10</th>
+                              </tr>
+                            </tfoot>
+                          </table>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-Project-Decisions" role="tabpanel" aria-labelledby="v-pills-Project-Decisions-tab">
+                        <table class="table table-borderless table-striped mb-5">
+                            <thead>
+                              <tr>
+                                <th>SI</th>
+                                <th>Project</th>
+                                <th>Contract</th>
+                                <th>Decisions</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Change code</td>
+                                <td>oneCategory</td>
+                                <td>oneSystems</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-Tool-Results" role="tabpanel" aria-labelledby="v-pills-Tool-Results-tab">
+                        <p>The details has the result obtained by running the tool profile that has list of tools assigned.</p>
+                          <ul>
+                            <li>
+                              <h4 class="fw-bold fs-6 mb-4" id="MythX">MythX (2 “level low” issues detected)</h4>
+                              <img src="image/MythX.png" alt="" class="img-fluid">
+                              <p>We have made a deep scan (very sensitive), 90 minutes of duration:</p>
+                            </li>
+                            <li>
+                              <h4 class="fw-bold fs-6 mb-4" id="Slither">Slither</h4>
+                              <p>Slither is a Solidity static analysis framework which runs a suite of vulnerability detectors, prints visual information about contract details, and provides an API to write custom analyses quickly. Slither enables developers to find vulnerabilities, enhance their code comprehension, and promptly prototype custom analyses. Each solidity file and project together has been analysed. We got a report with a few warnings and errors.</p>
+                              <p>We did the analysis of the project altogether. Below are the results.</p>
+                              <img src="image/Slither.png" alt="" class="img-fluid">
+                              <img src="image/Slither2.png" alt="" class="img-fluid">
+                              <p>While analysis with the slither there was some error/warnings/message from the tool on these files.</p>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about py-50 bg-light" id="Conclusion">
+            <div class="container">                
+                <div class="sec-title text-center">
+                    <h3>Conclusion</h3>
+                </div>
+                <p>In this audit, we thoroughly analyzed blockchainone Smart Contracts. The current code base is well organized but there are promptly some low-level issues found in this phase of Smart Contract Audit.</p>
+                <p>Meanwhile, we need to emphasize that smart contracts as a whole are still in an early, but exciting stage of development. To improve this report, we greatly appreciate any constructive feedbacks or suggestions, on our methodology, audit findings, or potential gaps in scope/coverage.</p>
+            </div>
+        </section>
+        <section class="about py-50 bg-light" id="About_blockchainone">
+            <div class="container">                
+                <div class="sec-title text-center">
+                    <h3>About blockchainone</h3>
+                </div>
+                <p>We believe that people have a fundamental need to security and that the use of secure solutions enables every person to more freely use the Internet and every other connected technology. We aim to provide security consulting service to help others make their solutions more resistant to unauthorized access to data & inadvertent manipulation of the system. We support teams from the design phase through the production to launch and surely after.</p>
+                <p>The blockchainone team has skills for reviewing code in C, C#, Python, Haskell, Rust, Node.js, Solidity, Go, and JavaScript for common security vulnerabilities & specific attack vectors. The team has reviewed implementations of cryptocurrency, blockchains, payments, and smart contracts. Additionally, the team can utilize various tools to scan code & networks and build custom tools as necessary.</p>
+                <h4>About blockchainone:</h4>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Item</th>
+                        <th></th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Issuer</td>
+                        <td>:</td>
+                        <td>blockchainone</td>
+                      </tr>
+                      <tr>
+                        <td>Website</td>
+                        <td>:</td>
+                        <td><a href="https://platformfactory.in/BlockChain/Home/LandingPages" style="word-break: break-all;">https://platformfactory.in/BlockChain/Home/LandingPages</a></td>
+                      </tr>
+                      <tr>
+                        <td>Type</td>
+                        <td>:</td>
+                        <td>ERC20</td>
+                      </tr>
+                      <tr>
+                        <td>Platform</td>
+                        <td>:</td>
+                        <td>Solidity</td>
+                      </tr>
+                      <tr>
+                        <td>Audit Method</td>
+                        <td>:</td>
+                        <td>Whitebox</td>
+                      </tr>
+                      <tr>
+                        <td>Latest Audit Report</td>
+                        <td>:</td>
+                        <td>April 12, 2023</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <!-- :: Scroll UP -->
+        <div class="scroll-up">
+            <a href="#page" class="move-section">
+                <i class="fas fa-long-arrow-alt-up"></i>
+            </a>
+        </div>
+        <!-- :: jQuery JS -->
+        <script src="assets/js/jquery-3.5.1.min.js"></script>
+        
+        <!-- :: Popper JS
+        <script src="assets/js/popper.min.js"></script> -->
+        
+        <!-- :: BootStrap JS -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        
+        <!-- :: Main JS -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
